@@ -21,3 +21,12 @@ body{
 .Header{
   margin-top: 0px;
 }
+.insta-whatsapp{
+ size: 40px;
+ display: inline-block;
+ margin-left: 30px;
+ }
+ .share
+ {
+   size:20px;
+ }

@@ -9,6 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import ShareIcon from '@material-ui/icons/Share';
 const useStyles = makeStyles({
     root: {
       maxWidth: 300,minHeight:450,marginTop:40,marginLeft:20
@@ -41,11 +42,14 @@ const Se=(props)=>{
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
-            Share
+        <a href="https://api.whatsapp.com/send?phone=&text=https://jemish1331.github.io/mahadevay" >
+        <Button size="small" color="primary">
+            <ShareIcon className="sharebutton" /> (Share) 
           </Button>
+        </a>
+          
           <Button size="small" color="primary">
-            Learn More
+            Best Wishes
           </Button>
         </CardActions>
       </Card>
