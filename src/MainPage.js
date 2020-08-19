@@ -46,9 +46,9 @@ const MainPage=()=>{
                 <br />
                 <br />
             
-                <img src="https://i.pinimg.com/736x/67/50/8c/67508cacd7406a4cb80ee7bf489a27f9.jpg" className="ml-5 w-25 h-30 mt-50px "></img>
+                <img src="https://i.pinimg.com/736x/67/50/8c/67508cacd7406a4cb80ee7bf489a27f9.jpg" className="ml-5 w-50 h-40 mt-50px "></img>
                  <h1 className="ml-5">To be continued....</h1>
-                 <br />
+                
                 
                  </>
             );
