@@ -37,15 +37,16 @@ const MainPage=()=>{
         <NavLink to="/chest" activeClassName="selected" ><button className={prop}>Chest-Exercise</button></NavLink>
         <NavLink to="/leg" activeClassName="selected" ><button className={prop}>Leg-Exercise</button></NavLink>
         <NavLink to="/bicep" activeClassName="selected" ><button className={prop}>Bicep-Exercise</button></NavLink>
-        <NavLink  to="/bhakt" />
+        <NavLink to="/timer" activeClassName="selected" ><button className={prop}>Stopwatch && Timer</button></NavLink>
+        <NavLink  to="/" />
         
-        <Route path="/bhakt" render={()=>{
+        <Route exact path="/" render={()=>{
             return (
                 <>
                 <br />
                 <br />
             
-                <img src="https://i.pinimg.com/736x/67/50/8c/67508cacd7406a4cb80ee7bf489a27f9.jpg" className="ml-5 w-25 h-30 mt-50px "></img>
+                <img src="https://i.pinimg.com/736x/67/50/8c/67508cacd7406a4cb80ee7bf489a27f9.jpg" className="ml-5 w-40 h-40 mt-50px "></img>
                  <h1 className="ml-5">To be continued....</h1>
                  <br />
                 
@@ -59,7 +60,7 @@ const MainPage=()=>{
                 <>
                 <br/>
                 <br/>
-                <img src={jemish} className="ml-5 w-25 h-30"></img><br/>
+                <img src={jemish} className="ml-5 w-50 h-50"></img><br/>
                 <br/>
                <a href="https://instagram.com/jemish_italiya_?igshid=i1nrk81esd3j"> <InstagramIcon className="insta-whatsapp" /></a>
                 <a href="mailto:italiyajemish99@gmail.com"><DraftsIcon className="insta-whatsapp" /></a>
@@ -104,9 +105,15 @@ const MainPage=()=>{
            </>
             );
         }}/>
-        
+        <Route path="/timer" render={()=>{
+
+      
+
+            
+        }}/>
         
            </BrowserRouter>
+           <br/>
            <br/>
         <h5 className="CopyRight">© Copyright {year} by JEMISH ITALIYA</h5>
         </>
