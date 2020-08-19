@@ -38,9 +38,9 @@ const MainPage=()=>{
         <NavLink to="/leg" activeClassName="selected" ><button className={prop}>Leg-Exercise</button></NavLink>
         <NavLink to="/bicep" activeClassName="selected" ><button className={prop}>Bicep-Exercise</button></NavLink>
         <NavLink to="/timer" activeClassName="selected" ><button className={prop}>Stopwatch && Timer</button></NavLink>
-        <NavLink  to="/" />
         
-        <Route exact path="/" render={()=>{
+        
+        <Route exact path="/mahadevay" render={()=>{
             return (
                 <>
                 <br />
