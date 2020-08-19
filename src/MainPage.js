@@ -47,7 +47,8 @@ const MainPage=()=>{
                 <br />
             
                 <img src="https://i.pinimg.com/736x/67/50/8c/67508cacd7406a4cb80ee7bf489a27f9.jpg" className="ml-5 w-50 h-40 mt-50px "></img>
-                 <h1 className="ml-5">To be continued....</h1>
+                 <br/>
+                 <h1 className="ml-4">To be continued....</h1>
                 
                 
                  </>
@@ -113,7 +114,7 @@ const MainPage=()=>{
         }}/>
         
            </BrowserRouter>
-           <br/>
+           
            <br/>
         <h5 className="CopyRight">© Copyright {year} by JEMISH ITALIYA</h5>
         </>
