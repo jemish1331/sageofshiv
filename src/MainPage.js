@@ -11,6 +11,8 @@ import jemish from "./images/jemish.jpg";
 import InstagramIcon from '@material-ui/icons/Instagram';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import CallIcon from '@material-ui/icons/Call';
+import { Collapse } from "@material-ui/core";
+import  {Media} from "reactstrap";
 
 
 function ncard1(val)
@@ -30,17 +32,18 @@ const MainPage=()=>{
     
     return(
         <>
+        
         <BrowserRouter>
-      
+    <Media list>
         <NavLink to="/home" activeClassName="selected" replace><button className={prop}>Profile</button></NavLink>
         <NavLink to="/shoulder" activeClassName="selected" ><button className={prop}>Shoulder-Exercise</button></NavLink> 
         <NavLink to="/chest" activeClassName="selected" ><button className={prop}>Chest-Exercise</button></NavLink>
         <NavLink to="/leg" activeClassName="selected" ><button className={prop}>Leg-Exercise</button></NavLink>
         <NavLink to="/bicep" activeClassName="selected" ><button className={prop}>Bicep-Exercise</button></NavLink>
         <NavLink to="/timer" activeClassName="selected" ><button className={prop}>Stopwatch && Timer</button></NavLink>
+        </Media>
         
-        
-        <Route exact path="/mahadevay" render={()=>{
+        <Route exact path="/" render={()=>{
             return (
                 <>
                 <br />
@@ -48,7 +51,7 @@ const MainPage=()=>{
             
                 <img src="https://i.pinimg.com/736x/67/50/8c/67508cacd7406a4cb80ee7bf489a27f9.jpg" className="ml-5 w-50 h-40 mt-50px "></img>
                  <br/>
-                 <h1 className="ml-4">To be continued....</h1>
+                 <h1 className="ml-4 "><Collapse>To be continued....</Collapse> </h1>
                 
                 
                  </>
