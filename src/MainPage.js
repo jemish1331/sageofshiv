@@ -32,12 +32,12 @@ const MainPage=()=>{
         <React.Fragment>
        <BrowserRouter>
        <div className="fixed-top mt-4 gray small-h-25 d-flex">
-        <NavLink to="/home" activeClassName="selected" className="ml-4 text-primary  h4 text-success">Profile</NavLink>
-        <NavLink to="/shoulder" activeClassName="selected"  className="ml-4 text-primary h4 text-success">Shoulder-Exercise</NavLink> 
-        <NavLink to="/chest" activeClassName="selected" className="ml-4 text-primary h4 text-success ">Chest-Exercise</NavLink>
-        <NavLink to="/leg" activeClassName="selected" className="ml-4 text-primary h4 text-success">Leg-Exercise</NavLink>
-        <NavLink to="/bicep" activeClassName="selected" className="ml-4 text-primary h4 text-success" >Bicep-Exercise</NavLink>
-        <NavLink to="/timer" activeClassName="selected" className="ml-4 text-primary h4 text-success">Diet-plan</NavLink>
+        <NavLink to="/home" activeClassName="selected" className="ml-4 text-primary  h4 text-warning">Profile</NavLink>
+        <NavLink to="/shoulder" activeClassName="selected"  className="ml-4 text-primary h4 text-warning">Shoulder-Exercise</NavLink> 
+        <NavLink to="/chest" activeClassName="selected" className="ml-4 text-primary h4 text-warning ">Chest-Exercise</NavLink>
+        <NavLink to="/leg" activeClassName="selected" className="ml-4 text-primary h4 text-warning">Leg-Exercise</NavLink>
+        <NavLink to="/bicep" activeClassName="selected" className="ml-4 text-primary h4 text-warning" >Bicep-Exercise</NavLink>
+        <NavLink to="/timer" activeClassName="selected" className="ml-4 text-primary h4 text-warning">Diet-plan</NavLink>
        </div>
        
        
