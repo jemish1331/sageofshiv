@@ -32,7 +32,7 @@ const MainPage=()=>{
         <React.Fragment>
     
        <BrowserRouter>
-       <div className="  overlap overlap-3 gray  small-h-25 d-flex">
+       <div className=" position-fixed overlap overlap-3 gray  small-h-25 d-flex">
         <NavLink to="/home" activeClassName="selected" className="ml-3 text-white  h4  font-weight-bolder  ">Profile</NavLink>
         <NavLink to="/exercise" activeClassName="selected" className="ml-3 text-white  h4  font-weight-bolder  ">Exercise</NavLink>
         <NavLink to="/timer" activeClassName="selected" className="ml-3 text-white h4  font-weight-bolder ">Diet-plan</NavLink>
@@ -57,7 +57,7 @@ const MainPage=()=>{
                 <>
                 <br />
                 <br />
-                <div className=" position-fixed overlap overlap-3 gray mt-5  small-h-25 d-flex">
+                <div className=" gray mt-5  small-h-25 d-flex">
                 <NavLink to="/shoulder" activeClassName="selected"  className="ml-2 text-white h6   font-weight-bolder ">Shoulder-Exercise</NavLink> 
         <NavLink to="/chest" activeClassName="selected" className="ml-2 text-white h6    font-weight-bolder ">Chest-Exercise</NavLink>
         <NavLink to="/leg" activeClassName="selected" className="ml-2 text-white h6  font-weight-bolder ">Leg-Exercise</NavLink>
