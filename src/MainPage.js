@@ -30,14 +30,12 @@ const MainPage=()=>{
     return(
         
         <React.Fragment>
+    
        <BrowserRouter>
-       <div className="fixed-top mt-4 gray small-h-25 d-flex">
-        <NavLink to="/home" activeClassName="selected" className="ml-4 text-primary  h4 text-warning">Profile</NavLink>
-        <NavLink to="/shoulder" activeClassName="selected"  className="ml-4 text-primary h4 text-warning">Shoulder-Exercise</NavLink> 
-        <NavLink to="/chest" activeClassName="selected" className="ml-4 text-primary h4 text-warning ">Chest-Exercise</NavLink>
-        <NavLink to="/leg" activeClassName="selected" className="ml-4 text-primary h4 text-warning">Leg-Exercise</NavLink>
-        <NavLink to="/bicep" activeClassName="selected" className="ml-4 text-primary h4 text-warning" >Bicep-Exercise</NavLink>
-        <NavLink to="/timer" activeClassName="selected" className="ml-4 text-primary h4 text-warning">Diet-plan</NavLink>
+       <div className="  overlap overlap-3 gray  small-h-25 d-flex">
+        <NavLink to="/home" activeClassName="selected" className="ml-3 text-white  h4  font-weight-bolder  ">Profile</NavLink>
+        <NavLink to="/exercise" activeClassName="selected" className="ml-3 text-white  h4  font-weight-bolder  ">Exercise</NavLink>
+        <NavLink to="/timer" activeClassName="selected" className="ml-3 text-white h4  font-weight-bolder ">Diet-plan</NavLink>
        </div>
        
        
@@ -45,17 +43,33 @@ const MainPage=()=>{
             return (
                 <>
                 <br />
-                <br />
-                <br />
+                
                 <br/>
                 <img src="https://i.pinimg.com/736x/67/50/8c/67508cacd7406a4cb80ee7bf489a27f9.jpg" className="ml-5 w-50 h-40 "></img>
                  <br/>
-                 <h1 className="ml-4 ">To be continued....</h1>
+                 <h1 className="ml-2 ">To be continued....</h1>
                 </>
             );
 
         }} />
-        
+        <Route  path="/exercise" render={()=>{
+            return (
+                <>
+                <br />
+                <br />
+                <div className=" position-fixed overlap overlap-3 gray mt-5  small-h-25 d-flex">
+                <NavLink to="/shoulder" activeClassName="selected"  className="ml-2 text-white h6   font-weight-bolder ">Shoulder-Exercise</NavLink> 
+        <NavLink to="/chest" activeClassName="selected" className="ml-2 text-white h6    font-weight-bolder ">Chest-Exercise</NavLink>
+        <NavLink to="/leg" activeClassName="selected" className="ml-2 text-white h6  font-weight-bolder ">Leg-Exercise</NavLink>
+        <NavLink to="/bicep" activeClassName="selected" className="ml-2 text-white h6   font-weight-bolder" >Bicep-Exercise</NavLink>
+               
+                   </div>
+                <br/>
+                
+                </>
+            );
+
+        }} />
         <Route path="/home" render={()=>{
             return(
                 <>
@@ -131,7 +145,7 @@ const MainPage=()=>{
       </BrowserRouter>
            
            <br/>
-        <h5 className="CopyRight">© Copyright {year} by JEMISH ITALIYA</h5>
+        <h5 className="CopyRight mt-5">© Copyright {year} by JEMISH ITALIYA</h5>
         </React.Fragment>
     );
     

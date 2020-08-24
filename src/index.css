@@ -32,9 +32,23 @@ body{
  }
 .gray
 {
-  background-color:wheat;
+  background-color:blue;
 }
 .space
 {
   margin-left: 20px;
+}
+.overlap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.overlap-2 {
+  display: block;
+  z-index: 120;
+}
+.overlap-3 {
+  display: none;
+  z-index: 130;
 }
