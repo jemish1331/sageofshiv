@@ -34,7 +34,7 @@ const MainPage=()=>{
         <>
         
         <BrowserRouter>
-    <Media list>
+    <Media className="container">
         <NavLink to="/home" activeClassName="selected" replace><button className={prop}>Profile</button></NavLink>
         <NavLink to="/shoulder" activeClassName="selected" ><button className={prop}>Shoulder-Exercise</button></NavLink> 
         <NavLink to="/chest" activeClassName="selected" ><button className={prop}>Chest-Exercise</button></NavLink>
