@@ -11,6 +11,8 @@ import jemish from "./images/jemish.jpg";
 import InstagramIcon from '@material-ui/icons/Instagram';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import CallIcon from '@material-ui/icons/Call';
+import { Wave, Random } from 'react-animated-text';
+import { colors } from "@material-ui/core";
 
 
 function ncard1(val)
@@ -32,23 +34,22 @@ const MainPage=()=>{
         <React.Fragment>
     
        <BrowserRouter>
-       <div className=" position-fixed overlap  gray  small-h-25 w-100 d-flex">
-        <NavLink to="/home" activeClassName="selected" className="ml-3 text-white  h4  font-weight-bolder  ">Profile</NavLink>
-        <NavLink to="/exercise" activeClassName="selected" className="ml-3 text-white  h4  font-weight-bolder  ">Exercise</NavLink>
-        <NavLink to="/timer" activeClassName="selected" className="ml-3 text-white h4  font-weight-bolder ">Diet-plan</NavLink>
+       <div className=" position-fixed overlap  gray  small-h-25 w-100 d-flex justify-content-center ">
+        <NavLink to="/home" activeClassName="selected" className="ml-4 text-white  h4  font-weight-bolder  "><Wave  text="Profile" speed="1"  delay="7"/></NavLink>
+        <NavLink to="/exercise" activeClassName="selected" className="ml-4 text-white  h4  font-weight-bolder  "><Wave  text="Exercise" speed="1" delay="7"/></NavLink>
+        <NavLink to="/timer" activeClassName="selected" className="ml-4 text-white h4  font-weight-bolder "><Wave  text="Diet-plan" speed="1" delay="7"/></NavLink>
        </div>
        
        
         <Route exact path="/" render={()=>{
             return (
-                <>
+                <div className="d-flex justify-content-center mt-5">
                 <br />
-                
-                <br/>
-                <img src="https://i.pinimg.com/736x/67/50/8c/67508cacd7406a4cb80ee7bf489a27f9.jpg" className="ml-5 w-50 h-40 "></img>
                  <br/>
-                 <h1 className="ml-2 ">To be continued....</h1>
-                </>
+                <img src="https://i.pinimg.com/736x/67/50/8c/67508cacd7406a4cb80ee7bf489a27f9.jpg" className="ml-5 w-50 h-40 "></img>
+                 
+                <p className="display-4 text-white"> To be continued....</p>
+                </div>
             );
 
         }} />
@@ -57,11 +58,11 @@ const MainPage=()=>{
                 <>
                 <br />
                 <br />
-                <div className=" gray mt-5  small-h-25 d-flex">
-                <NavLink to="/shoulder" activeClassName="selected"  className="ml-2 text-white h6   font-weight-bolder ">Shoulder-Exercise</NavLink> 
-        <NavLink to="/chest" activeClassName="selected" className="ml-2 text-white h6    font-weight-bolder ">Chest-Exercise</NavLink>
-        <NavLink to="/leg" activeClassName="selected" className="ml-2 text-white h6  font-weight-bolder ">Leg-Exercise</NavLink>
-        <NavLink to="/bicep" activeClassName="selected" className="ml-2 text-white h6   font-weight-bolder" >Bicep-Exercise</NavLink>
+                <div className=" gray mt-5 h-25 d-flex justify-content-center">
+                <NavLink to="/shoulder" activeClassName="selected"   className="ml-4 text-white h4  font-weight-bolder ">Shoulder-Exercise</NavLink> 
+                <NavLink to="/chest" activeClassName="selected"  className="ml-4 text-white h4   font-weight-bolder ">Chest-Exercise</NavLink>
+                <NavLink to="/leg" activeClassName="selected"  className="ml-4 text-white h4 font-weight-bolder ">Leg-Exercise</NavLink>
+                <NavLink to="/bicep" activeClassName="selected"  className="ml-4 text-white h4  font-weight-bolder" >Bicep-Exercise</NavLink>
                
                    </div>
                 <br/>
@@ -145,7 +146,7 @@ const MainPage=()=>{
       </BrowserRouter>
            
            <br/>
-        <h5 className="CopyRight mt-5">© Copyright {year} by JEMISH ITALIYA</h5>
+        <h5 className="CopyRight mt-5 d-flex justify-content-center">© Copyright {year} by JEMISH ITALIYA</h5>
         </React.Fragment>
     );
     
