@@ -52,3 +52,7 @@ body{
   display: none;
   z-index: 130;
 }
+.gray1
+{
+  background-color:white;
+}
