@@ -59,12 +59,12 @@ const MainPage=()=>{
                 <br />
                 <br />
                 <div className=" gray mt-5 h-25 d-flex justify-content-center">
-                <NavLink to="/shoulder" activeClassName="selected"   className="ml-4 text-white h4  font-weight-bolder ">Shoulder-Exercise</NavLink> 
-                <NavLink to="/chest" activeClassName="selected"  className="ml-4 text-white h4   font-weight-bolder ">Chest-Exercise</NavLink>
-                <NavLink to="/leg" activeClassName="selected"  className="ml-4 text-white h4 font-weight-bolder ">Leg-Exercise</NavLink>
-                <NavLink to="/bicep" activeClassName="selected"  className="ml-4 text-white h4  font-weight-bolder" >Bicep-Exercise</NavLink>
+                <NavLink to="/shoulder" activeClassName="selected"   className="ml-2 text-white h4  font-weight-bolder ">Shoulder-Exercise</NavLink></div> 
+                <div className=" gray mt-5 h-25 d-flex justify-content-center"> <NavLink to="/chest" activeClassName="selected"  className="ml-2 text-white h4   font-weight-bolder ">Chest-Exercise</NavLink></div>
+                <div className=" gray mt-5 h-25 d-flex justify-content-center"> <NavLink to="/leg" activeClassName="selected"  className="ml-2 text-white h4 font-weight-bolder ">Leg-Exercise</NavLink></div>
+                <div className=" gray mt-5 h-25 d-flex justify-content-center"> <NavLink to="/bicep" activeClassName="selected"  className="ml-2 text-white h4  font-weight-bolder" >Bicep-Exercise</NavLink></div>
                
-                   </div>
+                   
                 <br/>
                 
                 </>
