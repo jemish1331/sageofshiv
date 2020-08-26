@@ -37,7 +37,7 @@ const MainPage=()=>{
         <NavLink to="/exercise" activeClassName="selected" className="ml-4 text-white  h4  font-weight-bolder  "><Wave  text="Exercise" speed="1" delay="7"/></NavLink>
         <NavLink to="/timer" activeClassName="selected" className="ml-4 text-white h4  font-weight-bolder "><Wave  text="Diet-plan" speed="1" delay="7"/></NavLink>
        </div>
-       <Route exact path="/" render={()=>{
+       <Route exact path="/h" render={()=>{
             return (
                 <>
                 <div className="d-flex justify-content-center mt-5">
