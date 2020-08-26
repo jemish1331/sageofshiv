@@ -34,7 +34,7 @@ const MainPage=()=>{
         <React.Fragment>
     
        <BrowserRouter>
-       <div>
+       <div className="d-inline">
        <div className=" position-fixed overlap  gray  small-h-25 w-100 d-flex justify-content-center ">
         <NavLink to="/home" activeClassName="selected" className="ml-4 text-white  h4  font-weight-bolder  "><Wave  text="Profile" speed="1"  delay="7"/></NavLink>
         <NavLink to="/exercise" activeClassName="selected" className="ml-4 text-white  h4  font-weight-bolder  "><Wave  text="Exercise" speed="1" delay="7"/></NavLink>
