@@ -12,7 +12,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import CallIcon from '@material-ui/icons/Call';
 import { Wave, Random } from 'react-animated-text';
-import { colors } from "@material-ui/core";
+import Toloss from "./Toloss";
 function ncard1(val)
 {
 return (
@@ -128,8 +128,7 @@ const MainPage=()=>{
             );
         }}/>
         <Route path="/timer" render={()=>{
-
-      return(
+         return(
          <React.Fragment>
           <br/>
           <br />
@@ -143,22 +142,20 @@ const MainPage=()=>{
          </React.Fragment>
            );
            }}/>
-           <Route path="/togain" render={()=>
-           {
+           <Route path="/toloss" render={()=>{
                return(
                    <>
-
+                <Toloss />
                    </>
-
-               );
-           }} >
-
-           </Route>
+                     );
+           }} />
+ 
+           
         
       </BrowserRouter>
       <br/>
            
-        <div className="position-fixed fixed-bottom h4 d-flex justify-content-center text-white gray CopyRight w-100 ">
+        <div className="position-fixed fixed-bottom h5 d-flex justify-content-center text-white gray CopyRight w-100 ">
         © Copyright {year} by JEMISH ITALIYA
         </div>
         </React.Fragment>
