@@ -43,12 +43,12 @@ const Se=(props)=>{
         </CardActionArea>
         <CardActions>
         <a href="https://api.whatsapp.com/send?phone=&text=https://jemish1331.github.io/mahadevay" >
-        <Button size="small" color="primary">
-            <ShareIcon className="sharebutton" /> (Share) 
+        <Button size="small" className="black font-weight-bolder">
+            <ShareIcon className="sharebutton black font-weight-bolder" /> (Share) 
           </Button>
         </a>
           
-          <Button size="small" color="primary">
+          <Button size="small" className="black font-weight-bolder">
             Best Wishes
           </Button>
         </CardActions>

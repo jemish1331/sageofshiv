@@ -4,13 +4,12 @@ button
   margin-top: 20px;
 }
 body{
-  background-color:black;
+  background-color:silver;
 }
 .CopyRight
 {
   color:gray;
 
-  margin-left: 20px;
 }
 .ShoulderCard{
   display: inline-block;
@@ -25,6 +24,7 @@ body{
  size: 40px;
  display: inline-block;
  margin-left: 30px;
+ color:black;
  }
  .share
  {
@@ -32,7 +32,7 @@ body{
  }
 .gray
 {
-  background-color:blue;
+  background-color:rgb(88, 88, 94);
 }
 .space
 {
@@ -55,4 +55,12 @@ body{
 .gray1
 {
   background-color:white;
+}
+.exercise
+{
+  color:rgb(88, 88, 94) ;
+}
+.black
+{
+  color:black;
 }

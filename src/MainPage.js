@@ -45,7 +45,8 @@ const MainPage=()=>{
                  <br/>
                 <img src="https://i.pinimg.com/736x/67/50/8c/67508cacd7406a4cb80ee7bf489a27f9.jpg" ></img>
                 </div>
-                <div className="display-4 text-white d-flex justify-content-center"> To be continued....</div>
+                <div className="display-4 gray d-flex justify-content-center"> To be continued....</div>
+                <br/>
                 </>
             );
 
@@ -56,16 +57,16 @@ const MainPage=()=>{
                 <br />
                 <br />
                 <div className=" gray1 mt-5 h-25 d-flex justify-content-center">
-                <NavLink to="/shoulder" activeClassName="selected"   className="ml-2 text-primary h4  font-weight-bolder ">Shoulder-Exercise</NavLink>
+                <NavLink to="/shoulder" activeClassName="selected"   className="ml-2 h4 exercise font-weight-bolder ">Shoulder-Exercise</NavLink>
                 </div> 
                 <div className=" gray1 mt-5 h-25 d-flex justify-content-center"> 
-                <NavLink to="/chest" activeClassName="selected"  className="ml-2 text-primary h4   font-weight-bolder ">Chest-Exercise</NavLink>
+                <NavLink to="/chest" activeClassName="selected"  className="ml-2 h4 exercise  font-weight-bolder ">Chest-Exercise</NavLink>
                 </div>
                 <div className="gray1  mt-5 h-25 d-flex justify-content-center">
-                 <NavLink to="/leg" activeClassName="selected"  className="ml-2 text-primary h4 font-weight-bolder ">Leg-Exercise</NavLink>
+                 <NavLink to="/leg" activeClassName="selected"  className="ml-2 h4 exercise font-weight-bolder ">Leg-Exercise</NavLink>
                  </div>
                 <div className="gray1 mt-5 h-25 d-flex justify-content-center"> 
-                <NavLink to="/bicep" activeClassName="selected"  className="ml-2 text-primary h4  font-weight-bolder" >Bicep-Exercise</NavLink>
+                <NavLink to="/bicep" activeClassName="selected"  className="ml-2 h4 exercise  font-weight-bolder" >Bicep-Exercise</NavLink>
                 </div>
                
                    
@@ -85,7 +86,7 @@ const MainPage=()=>{
                 <br/>
                <a href="https://instagram.com/jemish_italiya_?igshid=i1nrk81esd3j"> <InstagramIcon className="insta-whatsapp" /></a>
                 <a href="mailto:italiyajemish99@gmail.com"><DraftsIcon className="insta-whatsapp" /></a>
-                <a href="tel:7096015396"><CallIcon className="insta-whatsapp" />  (+91 7096015396)</a>
+                <a href="tel:7096015396"><CallIcon className="insta-whatsapp " /> <span className="black"> (+91 7096015396)</span></a>
                 <br/>
                 <br/>
                 </>
@@ -133,24 +134,33 @@ const MainPage=()=>{
           <br/>
           <br />
 
-          <div className="container mt-3">
-          <NavLink to="/togain">Togain weight </NavLink><br/>
-          </div>
-          <div className="container">
-          <NavLink to="/toloss">To weight-loss</NavLink> <br/>
-          </div>
-        </React.Fragment>
-          
+          <div className=" gray1 mt-5 h-25 d-flex justify-content-center">
+                <NavLink to="/togain" activeClassName="selected"   className="ml-2 h4 exercise font-weight-bolder ">To gain weight</NavLink>
+                </div> 
+                <div className=" gray1 mt-5 h-25 d-flex justify-content-center">
+                <NavLink to="/toloss" activeClassName="selected"   className="ml-2 h4 exercise font-weight-bolder ">To loss weight</NavLink>
+                </div> 
+         </React.Fragment>
+           );
+           }}/>
+           <Route path="/togain" render={()=>
+           {
+               return(
+                   <>
 
-      );
+                   </>
 
-            
-        }}/>
+               );
+           }} >
+
+           </Route>
         
       </BrowserRouter>
+      <br/>
            
-           <br/>
-        <h5 className="CopyRight mt-5 d-flex justify-content-center">© Copyright {year} by JEMISH ITALIYA</h5>
+        <div className="position-fixed fixed-bottom h4 d-flex justify-content-center text-white gray CopyRight w-100 ">
+        © Copyright {year} by JEMISH ITALIYA
+        </div>
         </React.Fragment>
     );
     
