@@ -27,6 +27,7 @@ data={val.data}
 
 const MainPage=()=>{
     let year=new Date().getFullYear();
+
     
     return(
         
@@ -43,8 +44,10 @@ const MainPage=()=>{
             return (
                 <>
                 <br/>
-                <div className="h6 exercise font-weight-bolder d-flex justify-content-center mb-3 mt-5">
-               <Wave text="The harder you fall, The higher you bounce." speed="1" delay="10" /> 
+                <div className="h4 exercise  font-italic font-weight-light d-flex justify-content-center mb-3 mt-5">
+                    The harder you fall,<br />
+                         &nbsp;  &nbsp;  &nbsp;  The higher you bounce.
+                
                 </div>
                  <div className="d-flex justify-content-center ">
                 <img src="https://thumbs.dreamstime.com/b/vector-elements-vintage-fitness-gym-labels-sport-bodybuilding-dumbbell-element-barbell-label-66140836.jpg" className="h-75 w-50 mb-5 rounded img-fluid img-thumbnail mt-5"/>
