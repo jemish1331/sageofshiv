@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/sageofshiv/static/css/main.feaf3fd0.chunk.css",
+    "main.js": "/sageofshiv/static/js/main.bc35e281.chunk.js",
+    "main.js.map": "/sageofshiv/static/js/main.bc35e281.chunk.js.map",
+    "runtime-main.js": "/sageofshiv/static/js/runtime-main.9af13ff3.js",
+    "runtime-main.js.map": "/sageofshiv/static/js/runtime-main.9af13ff3.js.map",
+    "static/css/2.11829350.chunk.css": "/sageofshiv/static/css/2.11829350.chunk.css",
+    "static/js/2.73d6a4e6.chunk.js": "/sageofshiv/static/js/2.73d6a4e6.chunk.js",
+    "static/js/2.73d6a4e6.chunk.js.map": "/sageofshiv/static/js/2.73d6a4e6.chunk.js.map",
+    "index.html": "/sageofshiv/index.html",
+    "precache-manifest.d0c99d2a406e5e76f3fde4a1d8c23978.js": "/sageofshiv/precache-manifest.d0c99d2a406e5e76f3fde4a1d8c23978.js",
+    "service-worker.js": "/sageofshiv/service-worker.js",
+    "static/css/2.11829350.chunk.css.map": "/sageofshiv/static/css/2.11829350.chunk.css.map",
+    "static/css/main.feaf3fd0.chunk.css.map": "/sageofshiv/static/css/main.feaf3fd0.chunk.css.map",
+    "static/js/2.73d6a4e6.chunk.js.LICENSE.txt": "/sageofshiv/static/js/2.73d6a4e6.chunk.js.LICENSE.txt",
+    "static/media/jemish.jpg": "/sageofshiv/static/media/jemish.f9828a4f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9af13ff3.js",
+    "static/css/2.11829350.chunk.css",
+    "static/js/2.73d6a4e6.chunk.js",
+    "static/css/main.feaf3fd0.chunk.css",
+    "static/js/main.bc35e281.chunk.js"
+  ]
+}
