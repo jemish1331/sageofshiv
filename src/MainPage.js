@@ -43,7 +43,7 @@ const MainPage=()=>{
             return (
                 <>
                 <br/>
-                <div className="h5 d-flex justify-content-center mb-3 mt-5">
+                <div className="h6 exercise font-weight-bolder d-flex justify-content-center mb-3 mt-5">
                <Wave text="The harder you fall, The higher you bounce." speed="1" delay="10" /> 
                 </div>
                  <div className="d-flex justify-content-center ">
