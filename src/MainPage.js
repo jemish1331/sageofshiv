@@ -43,7 +43,11 @@ const MainPage=()=>{
             return (
                 <>
                  <div className="d-flex justify-content-center ">
-                <img src="https://thumbs.dreamstime.com/b/vector-elements-vintage-fitness-gym-labels-sport-bodybuilding-dumbbell-element-barbell-label-66140836.jpg" className="h-50 w-50 rounded img-fluid img-thumbnail mt-5"/>
+                <img src="https://thumbs.dreamstime.com/b/vector-elements-vintage-fitness-gym-labels-sport-bodybuilding-dumbbell-element-barbell-label-66140836.jpg" className="h-75 w-50 img-responsive rounded img-fluid img-thumbnail mt-5"/>
+                
+                </div>
+                <div className="h4 d-flex justify-content-center mb-5 mt-5">
+                The harder you fall, The higher you bounce.
                 </div>
                 </>
             );

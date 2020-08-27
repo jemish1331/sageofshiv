@@ -24,7 +24,7 @@ Mid afternoon snack:
 It is important to note that the diet plan and the caloric requirement, and the portion size differ from person to person depending on their age, gender and body weight. The diet will also vary with the timing of the workout schedule.
        </ol> 
        <div className="mt-5 d-flex justify-content-center">
-      <img src="https://i.ytimg.com/vi/-Mr_yVAqYs0/hqdefault.jpg" className="h-50 w-50 rounded img-thumbnail img-fluid"/>
+      <img src="https://i.ytimg.com/vi/-Mr_yVAqYs0/hqdefault.jpg" className="h-75 w-75 mb-5 rounded img-thumbnail img-fluid"/>
       </div>
         </div>
         </>
