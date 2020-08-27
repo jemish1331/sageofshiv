@@ -1,6 +1,6 @@
 import React from "react";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter,Route,NavLink} from "react-router-dom";
+import { BrowserRouter,Route,NavLink, Redirect} from "react-router-dom";
 import "./index.css";
 import Se from "./Se";
 import Shdata from "./Shdata";
@@ -13,6 +13,7 @@ import DraftsIcon from '@material-ui/icons/Drafts';
 import CallIcon from '@material-ui/icons/Call';
 import { Wave, Random } from 'react-animated-text';
 import Toloss from "./Toloss";
+import Togain from "./Togain";
 function ncard1(val)
 {
 return (
@@ -66,7 +67,7 @@ const MainPage=()=>{
                 <NavLink to="/bicep" activeClassName="selected"  className="ml-2 h4 exercise  font-weight-bolder" >Bicep-Exercise</NavLink>
                 </div>
                <div className="d-flex justify-content-center mt-3"> 
-               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQbq-lFhxM11ehL2pGzOVMqfgCxNvQcGs9Z6A&usqp=CAU" className="img-fluid img-thumbnail h-50 w-50" />
+               <img src="https://www.muscleandfitness.com/wp-content/uploads/2018/12/1109-Dumbbell-Row-Shredded-GettyImages-673114571.jpg?quality=86&strip=all" className="img-fluid img-thumbnail h-50 w-50" />
                </div>
                    
                 <br/>
@@ -151,8 +152,15 @@ const MainPage=()=>{
                    </>
                      );
            }} />
+           <Route path="/togain" render={()=>{
+               return(
+            <>
+            <Togain />
+            </>
+               );
+           }}/>
  
-           
+           <Redirect to="/" ></Redirect>
         
       </BrowserRouter>
       <br/>
