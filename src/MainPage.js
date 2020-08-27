@@ -66,7 +66,7 @@ const MainPage=()=>{
                 <NavLink to="/bicep" activeClassName="selected"  className="ml-2 h4 exercise  font-weight-bolder" >Bicep-Exercise</NavLink>
                 </div>
                <div className="d-flex justify-content-center mt-3"> 
-               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQbq-lFhxM11ehL2pGzOVMqfgCxNvQcGs9Z6A&usqp=CAU" className="img-fluid img-thumbnail h-50 w-25" />
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQbq-lFhxM11ehL2pGzOVMqfgCxNvQcGs9Z6A&usqp=CAU" className="img-fluid img-thumbnail h-50 w-50" />
                </div>
                    
                 <br/>
@@ -81,7 +81,7 @@ const MainPage=()=>{
                 <br/>
                 <br/>
                 <br/>
-                <img src={jemish} className="ml-5 h-50 mt-5 w-50 rounded-3 img-fluid img-thumbnail"></img><br/>
+                <img src={jemish} className="ml-5 h-75 mt-5 w-75 rounded-3 img-fluid img-thumbnail"></img><br/>
                 <br/>
                <a href="https://instagram.com/jemish_italiya_?igshid=i1nrk81esd3j"> <InstagramIcon className="insta-whatsapp" /></a>
                 <a href="mailto:italiyajemish99@gmail.com"><DraftsIcon className="insta-whatsapp" /></a>
@@ -139,7 +139,7 @@ const MainPage=()=>{
                 <NavLink to="/toloss" activeClassName="selected"   className="ml-2 h4 exercise font-weight-bolder ">To loss weight</NavLink>
                 </div>
                 <div className="mt-3 d-flex justify-content-center">
-                <img src="https://global-uploads.webflow.com/5ca5fe687e34be0992df1fbe/5d9ebc7c36e26ff101bdbbfe_diet%2520chart%2520for%2520women.jpeg" className="img-fluid img-thumbnail h-25 w-25" />
+                <img src="https://global-uploads.webflow.com/5ca5fe687e34be0992df1fbe/5d9ebc7c36e26ff101bdbbfe_diet%2520chart%2520for%2520women.jpeg" className="img-fluid img-thumbnail h-50 w-50" />
                 </div>
          </React.Fragment>
            );
