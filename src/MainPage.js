@@ -11,7 +11,7 @@ import jemish from "./images/jemish.jpg";
 import InstagramIcon from '@material-ui/icons/Instagram';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import CallIcon from '@material-ui/icons/Call';
-import { Wave, Random } from 'react-animated-text';
+import { Wave } from 'react-animated-text';
 import Toloss from "./Toloss";
 import Togain from "./Togain";
 function ncard1(val)
@@ -34,21 +34,23 @@ const MainPage=()=>{
     
        <BrowserRouter>
        <div className=" position-fixed overlap  gray  small-h-25 w-100 d-flex justify-content-center ">
-        <NavLink to="/home" activeClassName="selected" className="ml-4 text-white  h4  font-weight-bolder  "><Wave  text="Profile" speed="1"  delay="7"/></NavLink>
-        <NavLink to="/exercise" activeClassName="selected" className="ml-4 text-white  h4  font-weight-bolder  "><Wave  text="Exercise" speed="1" delay="7"/></NavLink>
-        <NavLink to="/timer" activeClassName="selected" className="ml-4 text-white h4  font-weight-bolder "><Wave  text="Diet-plan" speed="1" delay="7"/></NavLink>
+        <NavLink to="/home" activeClassName="selected" className="ml-4 text-white  h4  font-weight-bolder  ">Profile</NavLink>
+        <NavLink to="/exercise" activeClassName="selected" className="ml-4 text-white  h4  font-weight-bolder  ">Exercise</NavLink>
+        <NavLink to="/timer" activeClassName="selected" className="ml-4 text-white h4  font-weight-bolder ">Diet-plan</NavLink>
        </div>
       
        <Route exact path="/" render={()=>{
             return (
                 <>
+                <br/>
+                <div className="h5 d-flex justify-content-center mb-3 mt-5">
+               <Wave text="The harder you fall, The higher you bounce." speed="1" delay="10" /> 
+                </div>
                  <div className="d-flex justify-content-center ">
-                <img src="https://thumbs.dreamstime.com/b/vector-elements-vintage-fitness-gym-labels-sport-bodybuilding-dumbbell-element-barbell-label-66140836.jpg" className="h-75 w-50 img-responsive rounded img-fluid img-thumbnail mt-5"/>
+                <img src="https://thumbs.dreamstime.com/b/vector-elements-vintage-fitness-gym-labels-sport-bodybuilding-dumbbell-element-barbell-label-66140836.jpg" className="h-75 w-50 mb-5 rounded img-fluid img-thumbnail mt-5"/>
                 
                 </div>
-                <div className="h4 d-flex justify-content-center mb-5 mt-5">
-                The harder you fall, The higher you bounce.
-                </div>
+                
                 </>
             );
 
