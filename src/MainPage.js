@@ -14,6 +14,7 @@ import CallIcon from '@material-ui/icons/Call';
 import Toloss from "./Toloss";
 import Togain from "./Togain";
 import {MediaControlCard,data} from "./MediaControlCard";
+import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 
 function ncard1(val)
 {
@@ -55,12 +56,14 @@ const MainPage=()=>{
             return (
                 <>
                 <br/>
-                <div className="h4 exercise  font-italic font-weight-light d-flex justify-content-center mb-3 mt-5">
+                <div className="h4 exercise  font-italic font-weight-light d-flex justify-content-center mb-3 mt-5 ">
                     The harder you fall,<br />
                          &nbsp;  &nbsp;  &nbsp;  The higher you bounce.
                 
                 </div>
-                <div className="Scrolling-menu mt-5">
+                <div className="mt-5 exercise h6 font-italic ml-3">Swipe right <KeyboardArrowRightIcon/><KeyboardArrowRightIcon/></div>
+                <div className="Scrolling-menu ">
+                
                {data.map(ncard2)}
                </div>
                  <div className="d-flex justify-content-center ">

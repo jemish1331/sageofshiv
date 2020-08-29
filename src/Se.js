@@ -42,7 +42,7 @@ const Se=(props)=>{
           </CardContent>
         </CardActionArea>
         <CardActions>
-        <a href="https://api.whatsapp.com/send?phone=&text=https://jemish1331.github.io/mahadevay" >
+        <a href="https://api.whatsapp.com/send?phone=&text=https://jemish1331.github.io/sageofshiv" >
         <Button size="small" className="black font-weight-bolder">
             <ShareIcon className="sharebutton black font-weight-bolder" /> (Share) 
           </Button>
