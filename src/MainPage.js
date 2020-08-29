@@ -61,7 +61,7 @@ const MainPage=()=>{
                          &nbsp;  &nbsp;  &nbsp;  The higher you bounce.
                 
                 </div>
-                <div className="mt-5 exercise h6 font-italic ml-3">Swipe right <KeyboardArrowRightIcon/><KeyboardArrowRightIcon/></div>
+                <div className="mt-5 exercise h6 font-italic ml-3">Swipe  <KeyboardArrowRightIcon/><KeyboardArrowRightIcon/></div>
                 <div className="Scrolling-menu ">
                 
                {data.map(ncard2)}
