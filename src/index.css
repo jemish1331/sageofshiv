@@ -64,3 +64,31 @@ body{
 {
   color:black;
 }
+.Scrolling-menu {
+  display: flex;
+   flex-wrap: nowrap;
+   overflow-x: auto;
+  
+}
+   .card {
+     flex: 0 0 auto;
+     lef-margin:10px
+ }
+ .table{
+   max-width: 400px;
+   max-height: 170px;
+ }
+ .aimage{
+   max-width: 200px;
+   max-height: 150px;
+ }
+ .menu{
+  width: 500px;
+  height: 200px;
+  margin-left: 10px;
+ }
+ .audio{
+   width:250px ;
+ }
+ 
+ 

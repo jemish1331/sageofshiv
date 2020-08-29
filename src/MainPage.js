@@ -11,9 +11,10 @@ import jemish from "./images/jemish.jpg";
 import InstagramIcon from '@material-ui/icons/Instagram';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import CallIcon from '@material-ui/icons/Call';
-import { Wave } from 'react-animated-text';
 import Toloss from "./Toloss";
 import Togain from "./Togain";
+import {MediaControlCard,data} from "./MediaControlCard";
+
 function ncard1(val)
 {
 return (
@@ -21,6 +22,16 @@ return (
 img={val.img}
 title={val.title}
 data={val.data}
+/>
+);
+}
+function ncard2(val)
+{
+return (
+<MediaControlCard
+name={val.name}
+img={val.img}
+link={val.link}
 />
 );
 }
@@ -49,6 +60,9 @@ const MainPage=()=>{
                          &nbsp;  &nbsp;  &nbsp;  The higher you bounce.
                 
                 </div>
+                <div className="Scrolling-menu mt-5">
+               {data.map(ncard2)}
+               </div>
                  <div className="d-flex justify-content-center ">
                 <img src="https://thumbs.dreamstime.com/b/vector-elements-vintage-fitness-gym-labels-sport-bodybuilding-dumbbell-element-barbell-label-66140836.jpg" className="h-75 w-50 mb-5 rounded img-fluid img-thumbnail mt-5"/>
                 
