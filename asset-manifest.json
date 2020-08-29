@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sageofshiv/static/css/main.47a45e44.chunk.css",
-    "main.js": "/sageofshiv/static/js/main.d23b47bb.chunk.js",
-    "main.js.map": "/sageofshiv/static/js/main.d23b47bb.chunk.js.map",
+    "main.js": "/sageofshiv/static/js/main.d35ff654.chunk.js",
+    "main.js.map": "/sageofshiv/static/js/main.d35ff654.chunk.js.map",
     "runtime-main.js": "/sageofshiv/static/js/runtime-main.9af13ff3.js",
     "runtime-main.js.map": "/sageofshiv/static/js/runtime-main.9af13ff3.js.map",
     "static/css/2.11829350.chunk.css": "/sageofshiv/static/css/2.11829350.chunk.css",
     "static/js/2.2a861e8f.chunk.js": "/sageofshiv/static/js/2.2a861e8f.chunk.js",
     "static/js/2.2a861e8f.chunk.js.map": "/sageofshiv/static/js/2.2a861e8f.chunk.js.map",
     "index.html": "/sageofshiv/index.html",
-    "precache-manifest.40eaac006d3971feb4f9feb0851eb7fd.js": "/sageofshiv/precache-manifest.40eaac006d3971feb4f9feb0851eb7fd.js",
+    "precache-manifest.d424de1128ecfc9c14b7496c7908d20f.js": "/sageofshiv/precache-manifest.d424de1128ecfc9c14b7496c7908d20f.js",
     "service-worker.js": "/sageofshiv/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/sageofshiv/static/css/2.11829350.chunk.css.map",
     "static/css/main.47a45e44.chunk.css.map": "/sageofshiv/static/css/main.47a45e44.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.11829350.chunk.css",
     "static/js/2.2a861e8f.chunk.js",
     "static/css/main.47a45e44.chunk.css",
-    "static/js/main.d23b47bb.chunk.js"
+    "static/js/main.d35ff654.chunk.js"
   ]
 }

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1acf3ce78f079e42ff0ae36baa5a031e",
+    "revision": "5cd0b1d1d82af2b347da21d47306205b",
     "url": "/sageofshiv/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sageofshiv/static/css/2.11829350.chunk.css"
   },
   {
-    "revision": "4d773be8905f7f9a4e22",
+    "revision": "777095cb5a3c1e443fdf",
     "url": "/sageofshiv/static/css/main.47a45e44.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sageofshiv/static/js/2.2a861e8f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4d773be8905f7f9a4e22",
-    "url": "/sageofshiv/static/js/main.d23b47bb.chunk.js"
+    "revision": "777095cb5a3c1e443fdf",
+    "url": "/sageofshiv/static/js/main.d35ff654.chunk.js"
   },
   {
     "revision": "1c58fa67cdaacac4c506",
