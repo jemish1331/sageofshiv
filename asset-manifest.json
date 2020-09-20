@@ -1,26 +1,15 @@
 {
-  "files": {
-    "main.css": "/sageofshiv/static/css/main.29f40eca.chunk.css",
-    "main.js": "/sageofshiv/static/js/main.d35ff654.chunk.js",
-    "main.js.map": "/sageofshiv/static/js/main.d35ff654.chunk.js.map",
-    "runtime-main.js": "/sageofshiv/static/js/runtime-main.9af13ff3.js",
-    "runtime-main.js.map": "/sageofshiv/static/js/runtime-main.9af13ff3.js.map",
-    "static/css/2.11829350.chunk.css": "/sageofshiv/static/css/2.11829350.chunk.css",
-    "static/js/2.2a861e8f.chunk.js": "/sageofshiv/static/js/2.2a861e8f.chunk.js",
-    "static/js/2.2a861e8f.chunk.js.map": "/sageofshiv/static/js/2.2a861e8f.chunk.js.map",
-    "index.html": "/sageofshiv/index.html",
-    "precache-manifest.af8443c4d7cb495803fd569df52476a1.js": "/sageofshiv/precache-manifest.af8443c4d7cb495803fd569df52476a1.js",
-    "service-worker.js": "/sageofshiv/service-worker.js",
-    "static/css/2.11829350.chunk.css.map": "/sageofshiv/static/css/2.11829350.chunk.css.map",
-    "static/css/main.29f40eca.chunk.css.map": "/sageofshiv/static/css/main.29f40eca.chunk.css.map",
-    "static/js/2.2a861e8f.chunk.js.LICENSE.txt": "/sageofshiv/static/js/2.2a861e8f.chunk.js.LICENSE.txt",
-    "static/media/jemish.jpg": "/sageofshiv/static/media/jemish.f9828a4f.jpg"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.9af13ff3.js",
-    "static/css/2.11829350.chunk.css",
-    "static/js/2.2a861e8f.chunk.js",
-    "static/css/main.29f40eca.chunk.css",
-    "static/js/main.d35ff654.chunk.js"
-  ]
+  "main.css": "/sageofshiv/static/css/main.6b3b1e1f.chunk.css",
+  "main.js": "/sageofshiv/static/js/main.8805b53f.chunk.js",
+  "main.js.map": "/sageofshiv/static/js/main.8805b53f.chunk.js.map",
+  "runtime~main.js": "/sageofshiv/static/js/runtime~main.743bba42.js",
+  "runtime~main.js.map": "/sageofshiv/static/js/runtime~main.743bba42.js.map",
+  "static/css/2.9f432744.chunk.css": "/sageofshiv/static/css/2.9f432744.chunk.css",
+  "static/js/2.aaeef5aa.chunk.js": "/sageofshiv/static/js/2.aaeef5aa.chunk.js",
+  "static/js/2.aaeef5aa.chunk.js.map": "/sageofshiv/static/js/2.aaeef5aa.chunk.js.map",
+  "index.html": "/sageofshiv/index.html",
+  "precache-manifest.f2a37f55d389e69e2772aaa8204087da.js": "/sageofshiv/precache-manifest.f2a37f55d389e69e2772aaa8204087da.js",
+  "service-worker.js": "/sageofshiv/service-worker.js",
+  "static/css/2.9f432744.chunk.css.map": "/sageofshiv/static/css/2.9f432744.chunk.css.map",
+  "static/css/main.6b3b1e1f.chunk.css.map": "/sageofshiv/static/css/main.6b3b1e1f.chunk.css.map"
 }
