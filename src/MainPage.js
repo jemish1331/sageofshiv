@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter,Route,NavLink, Redirect} from "react-router-dom";
 import "./index.css";
@@ -7,14 +7,14 @@ import Shdata from "./Shdata";
 import Cedata from "./Cedata";
 import Ledata from "./Ledata";
 import Bedata from "./Bedata";
-import jemish from "./images/jemish.jpg";
-import InstagramIcon from '@material-ui/icons/Instagram';
-import DraftsIcon from '@material-ui/icons/Drafts';
-import CallIcon from '@material-ui/icons/Call';
 import Toloss from "./Toloss";
 import Togain from "./Togain";
 import {MediaControlCard,data} from "./MediaControlCard";
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
+import { Col, Label, Modal, ModalBody, ModalFooter, ModalHeader, Row } from "reactstrap";
+import { LocalForm,Control, Errors } from 'react-redux-form';
+import { TransitionGroup,CSSTransition } from "react-transition-group";
+
 
 function ncard1(val)
 {
@@ -38,20 +38,127 @@ link={val.link}
 }
 
 const MainPage=()=>{
-    let year=new Date().getFullYear();
-
+let year=new Date().getFullYear();
+ const [view,setView]=useState(false);
+ const [detail,setDetail]=useState('');
+ const required=(val)=>val && val.length;
+ const maxLength = (len) => (val) => !(val) || (val.length <= len);
+const minLength = (len) => (val) => val && (val.length >= len);
+const isNumber=(val)=>Number(val);
+ 
     
     return(
         
         <React.Fragment>
     
        <BrowserRouter>
-       <div className=" position-fixed overlap  gray  small-h-25 w-100 d-flex justify-content-center ">
-        <NavLink to="/home" activeClassName="selected" className="ml-4 text-white  h4  font-weight-bolder  ">Profile</NavLink>
-        <NavLink to="/exercise" activeClassName="selected" className="ml-4 text-white  h4  font-weight-bolder  ">Exercise</NavLink>
-        <NavLink to="/timer" activeClassName="selected" className="ml-4 text-white h4  font-weight-bolder ">Diet-plan</NavLink>
-       </div>
-      
+       <div className=" position-fixed overlap  gray  small-h-25 w-100 d-flex justify-content-left ">
+        
+        <NavLink to="/exercise" activeClassName="selected" className="ml-4 text-white  h4  font-weight-normal ">Exercise</NavLink>
+        <NavLink to="/timer" activeClassName="selected" className="ml-4 text-white h4  font-weight-normal ">Diet-plan</NavLink>
+        <div className="text-white h4 font-weight-normal ml-4" onClick={()=>setView(!view)}>Contact Us</div>
+        </div>
+        
+       <Modal isOpen={view} toggle={()=>setView(!view)} className="modal-dialog mt-5">
+       <ModalHeader toggle={()=>setView(!view)}>Fill the Form</ModalHeader>
+       <ModalBody>
+       <LocalForm onSubmit={(values)=>{
+           alert('Current State is: ' + JSON.stringify(values)); 
+            setView(!view);
+       }} toggle={()=>setView(!view)} >
+       <Row className="form-group">
+           <Label htmlFor="firstname" md={3}>First-Name:</Label>
+           <Col md={9}>
+           <Control.text model=".firstname" id="firstname" name="firstname" placeholder="First Name" className="form-control"
+               validators={{
+                required, minLength: minLength(3), maxLength: maxLength(15)
+               }}
+                />
+               <Errors
+                                        className="text-danger"
+                                        model=".firstname"
+                                        show="touched"
+                                        messages={{
+                                            required: 'Required',
+                                            minLength: 'Must be greater than 2 characters',
+                                            maxLength: 'Must be 15 characters or less'
+                                        }}
+                                     />
+         </Col>
+        </Row>
+        <Row className="form-group">
+        <Label htmlFor="lastname" md={3}>Last-name:</Label>
+          <Col md={9}> 
+          <Control.text model=".lastname" id="lastname" name="lastname" placeholder="Last Name" className="form-control"
+              validators={{
+                  required,minLength:minLength(3),maxLength:maxLength(10)
+              }}
+          />
+          <Errors
+                                        className="text-danger"
+                                        model=".lastname"
+                                        show="touched"
+                                        messages={{
+                                            required: 'Required',
+                                            minLength: 'Must be greater than 2 characters',
+                                            maxLength: 'Must be 15 characters or less'
+                                        }}
+                                     />
+          </Col>
+        </Row>
+        <Row className="form-group">
+        <Label htmlFor="telnum" md={3}>Tel-Num</Label>
+        <Col md={9}>
+        <Control.text model=".telnum" id="telnum" name="telnum" placeholder="Enter Number" className="form-control" validators={{
+            required,minLength:minLength(10),maxLength:maxLength(10),isNumber
+        }}/>
+        <Errors className="text-danger"
+                model=".telnum"
+                show="touched"
+                messages={{
+                    required:'Required',
+                    minLength: 'Must be 10 characters',
+                    maxLength: 'Must be 10 characters',
+                    isNumber:'Must be a Number'
+                }}
+        />
+  
+        </Col>
+        </Row>
+
+        <Row className="form-group">
+        <Label htmlFor="gender" md={3}>Gender:</Label>
+        <Col md={5}>
+        <Control.select model=".gender" id="gender" name="gender" placeholder="please select" validators={{required}} className="form-control" >
+        <option defaultValue="select">Select gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+        
+        </Control.select>
+        <Errors className="text-danger" model=".gender" show="touched" messages={{required:"Please select gender"}}></Errors>
+        </Col>
+        </Row>
+          
+           <Row className="d-flex justify-content-center mr-3">
+           
+           <Label htmlFor="submit">
+           <button type="submit" >Submit</button>
+           </Label>
+           </Row>
+           
+       </LocalForm>
+
+       </ModalBody>
+       <ModalFooter toggle={()=>setView(!view)} className="d-flex justify-content-center">
+       Thanks for visit
+       </ModalFooter>
+       
+       </Modal>
+       
+       <TransitionGroup >
+    <CSSTransition className="page-enter page-enter-active page-exit" timeout={300}>
+    <switch>
        <Route exact path="/" render={()=>{
             return (
                 <>
@@ -59,6 +166,7 @@ const MainPage=()=>{
                 <div className="h4 exercise  font-italic font-weight-light d-flex justify-content-center mb-3 mt-5 ">
                     The harder you fall,<br />
                          &nbsp;  &nbsp;  &nbsp;  The higher you bounce.
+                         
                 
                 </div>
                 <div className="mt-5 exercise h6 font-italic ml-3">Swipe  <KeyboardArrowRightIcon/><KeyboardArrowRightIcon/></div>
@@ -102,24 +210,7 @@ const MainPage=()=>{
             );
 
         }} />
-        <Route path="/home" render={()=>{
-            return(
-                <>
-                <br/>
-                <br/>
-                <br/>
-                <img src={jemish} className="ml-5 h-75 mt-5 w-75 rounded-3 img-fluid img-thumbnail"></img><br/>
-                <br/>
-               <a href="https://instagram.com/jemish_italiya_?igshid=i1nrk81esd3j"> <InstagramIcon className="insta-whatsapp" /></a>
-                <a href="mailto:italiyajemish99@gmail.com"><DraftsIcon className="insta-whatsapp" /></a>
-                <a href="tel:7096015396"><CallIcon className="insta-whatsapp " /> <span className="black"> (+91 7096015396)</span></a>
-                <br/>
-                <br/>
-                </>
-
-            );
-        }}
- />
+    
         <Route exact path="/shoulder" render={()=>{
             return(
             <>
@@ -187,8 +278,11 @@ const MainPage=()=>{
            }}/>
  
            <Redirect to="/" ></Redirect>
-        
+           </switch>
+           </CSSTransition>
+      </TransitionGroup>
       </BrowserRouter>
+      
       <br/>
            
         <div className="position-fixed fixed-bottom h5 d-flex justify-content-center text-white gray CopyRight w-100 ">
