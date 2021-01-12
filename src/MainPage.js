@@ -53,7 +53,7 @@ const isNumber=(val)=>Number(val);
     
        <BrowserRouter>
        <div className=" position-fixed overlap  gray  small-h-25 w-100 d-flex justify-content-left ">
-        
+        <NavLink to="/try">Try</NavLink>
         <NavLink to="/exercise" activeClassName="selected" className="ml-4 text-white  h4  font-weight-normal ">Exercise</NavLink>
         <NavLink to="/timer" activeClassName="selected" className="ml-4 text-white h4  font-weight-normal ">Diet-plan</NavLink>
         <div className="text-white h4 font-weight-normal ml-4" onClick={()=>setView(!view)}>Contact Us</div>
@@ -183,6 +183,16 @@ const isNumber=(val)=>Number(val);
             );
 
         }} />
+        <Route path="/try" render={()=>{
+            return(
+                <div>
+                <br/>
+                <br/>
+                Helloji
+                </div>
+
+            );
+        }}></Route>
         <Route  path="/exercise" render={()=>{
             return (
                 <>
@@ -218,8 +228,7 @@ const isNumber=(val)=>Number(val);
            {Shdata.map(ncard1)}
            </>
             );
-        }}
-/> 
+        }}/> 
         <Route path="/Chest" render={()=>{
             return(
             <>
@@ -286,7 +295,7 @@ const isNumber=(val)=>Number(val);
       <br/>
            
         <div className="position-fixed fixed-bottom h5 d-flex justify-content-center text-white gray CopyRight w-100 ">
-        © Copyright {year} by JEMISH ITALIYA
+        © Copyright {year} by ITALIYA GROUP
         </div>
         </React.Fragment>
     );
